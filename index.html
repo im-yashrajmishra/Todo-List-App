@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/util.css">
+</head>
+<body class="flexCenter">
+    <header></header>
+    <main>
+        <section class="mContainer flexSpaceBetween" id="mContainer1">
+            <div class="flexSpaceBetween">
+                <img src="images/logo.png" alt="" class="" id="logo">
+                <p class="mtext1 blue" id="mtext11"><label for="mtext11">Todo List App</label></p>
+            </div>
+            <div class="flexSpaceBetween" title="change theme" onclick="changeTheme()">
+                <img src="images/sun.png" alt="">
+                <div></div>
+                <img src="images/moon.png" alt="">
+            </div>
+            </section><br>
+        <section class="mContainer" id="mContainer2">
+            <div class="flexSpaceBetween">
+                <input type="text" name="newTask" class="input1 mtext2 darkblue" id="mtext21" title="Please fill out this field" placeholder="Add a new task....">
+                <img src="images/addTask.png" alt="" title="Tap to add the task in list" onclick="addTask()">
+            </div>
+            <div>
+                <p class="mtext2 darkblue">Please fill out this field.</p>
+            </div>
+        </section>
+        <section class="mContainer flexLeft" id="mContainer3">
+            <button class="button2 mtext2 darkblue" id="button21" title="Show all task in list" onclick="showAllTask()">All</button>
+            <button class="button2 mtext2 darkblue" id="button22" title="Show only completed task in list" onclick="completedTask()">Completed</button>
+            <button class="button2 mtext2 darkblue" id="button23" title="Show only incomplete task in list" onclick="incompleteTask()">Incomplete</button>
+            <img src="images/deleteAll.png" alt="" title="Delete all task in list" onclick="deleteAllTask()">
+        </section><br>
+        <section class="mContainer" id="mContainer4">
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
